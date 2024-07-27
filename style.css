@@ -1,0 +1,762 @@
+/* stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+    colors 
+    blue : #10326d
+    yellow: #e4a633
+    white : #ebe9e9
+*/
+/* Polices Settings */
+.roboto-condensed{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Styles for all pages */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color:  #10326d;
+}
+
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #10326d; 
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+/* Styles for all pages */
+
+main{
+    flex-grow: 1;
+    background-color: white;
+}
+
+/* Header - Haut de page */
+.topbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 18vh;
+    padding: 20px 30px 20px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-bottom: #10326d 1px solid;
+}
+
+.logo{
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+/* Hamburger Button */
+.menu-button{
+    display: none;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Navigation Bar  */
+.navbar{
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+/* Social Networks Icons */
+.topbar .social_networks{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 20px;
+    /* order: 3; */
+}
+.social_networks li{
+    list-style-type: none;
+}
+
+.topbar .social_networks li a:hover{
+    color: #e4a633;
+}
+/* Social Networks Icons */
+
+/* Navigation Bar Animation */
+.navbar li a{
+    position: relative;
+}
+.navbar li a::before{
+    position: absolute;
+    background-color: #e4a633;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0px;
+    transition: 1s;
+}
+
+.navbar li a:hover, .navbar li a:hover::before{
+    color: #e4a633;
+    width: 100%;
+}
+
+.navbar, .social_networks ul{
+    list-style: none;
+}
+/* Navigation Bar Animation */
+
+
+/* Navigation Bar  */
+
+/* Header - Haut de page */
+
+/* Poster */
+.poster{
+    width: 100vw;
+    height: 400px;
+    position: relative;
+}
+
+.responsive-slogan{
+    display: none;
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster .slogan{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slogan h1{
+    text-align: center;
+}
+
+.slogan p{
+    padding: 10px;
+    text-align: center;
+    background-color: #eda31a;
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+}
+/* Poster */
+
+/* Styles for Homepage */
+/* Articles  and Articles for Schoolpage*/
+.articles{
+    width: 100%;
+    padding: 20px 40px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.creation, .formation{
+    align-items: flex-start;
+}
+
+.goal{
+    align-items: flex-start;
+}
+.goal ul{
+    list-style-type: square;
+}
+
+
+.creation .picture, .formation .first{
+    width: 40%;
+    height: 100%;
+}
+.formation .second{
+    width: 45%;
+    height: 100%;
+}
+
+.goal .picture{
+    width: 42%;
+    height: 600px;
+}
+
+.add_list_style ul li{
+    list-style-type: square;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    width: 50%;
+    height: 100px;
+}
+
+.content h1{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-right: 10px solid #eea622;
+    width: 50%;
+    font-size: 24px;
+}
+
+.content p{
+    padding: 5px;
+    text-align: justify;
+}
+
+.contact p, .contact a{
+    padding: 20px;
+    background-color: #10326d;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.contact a{
+    text-decoration: underline;
+    color: #e4a633;
+}
+
+.contact .small-size{
+    font-size: 20px;
+}
+/* Articles */
+/* Styles for Homepage */
+
+/* Styles for Schoolpage */
+.formation .picture{
+    width: 45%;
+}
+.formation h1{
+    width: 80%;
+}
+.formation .content ul li{
+    list-style-type: square;
+}
+
+.formation .beginner{
+    width: 40%;
+    height: 500px;
+}
+
+.formation .advanced{
+    width: 40%;
+    height: 600px;
+}
+/* Styles for Schoolpage */
+
+/* Styles for RegistrationPage */
+.poster .register_slogan{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+}
+
+.register h2{
+    color: #10326d;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Styles for RegistrationPage */
+/* Styles for ContactPage */
+.main-container{
+    margin: 20px 0px;
+    padding: 0px 40px;
+}
+.contact-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container div{
+    height: 100%;
+}
+.contact-container .data-container{
+    width: 30%;
+    /* padding: 20px; */
+    background-color: tomato;
+    padding: 30px;
+}
+
+.data-container h2{
+    margin-bottom: 20px;
+}
+
+.data-container ul li{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.contact-container .form-container{
+    width: 70%;
+    background-color: #10326d;
+    color: white;
+    padding: 15px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container h2{
+    margin-bottom: 20px;
+}
+
+form .write{
+    width: 48%;
+    height: 40px;
+    /* background-color: tomato; */
+    margin-bottom: 40px;
+}
+
+form .write input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+form .text-content{
+    width: 100%;
+}
+
+form .text-content textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: solid #10326d 1px;
+    border-radius: 10px;
+    padding: 10px;
+    /* resize: none; */
+}
+
+form .button{
+    width: 20%;
+    height: 40px;
+    margin-top: 10px;
+}
+form .button input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #10326d;
+}
+
+form .button input:hover{
+    background-color: #e4a633;
+    color: white;
+}
+/* Styles for ContactPage */
+
+/* Styles for Teampage */
+.admin-staff, .technical-staff{
+    margin: 40px 10px;
+    padding: 0px 15px;
+}
+.admin-staff h1, .technical-staff h1{
+    background-color: #10326d;
+    border-right: 10px solid #eea622;
+    width: 40%;
+}
+
+.admin-staff .gallery, .technical-staff .gallery{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+.gallery .staff-content{
+    width: 250px;
+    height: 280px;
+    margin: 5px 0px;
+}
+
+.staff-content .person{
+    height: 80%;
+}
+
+.staff-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.staff-content .post{
+    height: 20%;
+    background-color: #10326d;
+    color: white;
+    text-align: left;
+    /* padding-left: 5px; */
+    padding: 5px 0px 5px 5px;
+}
+
+.staff-content .post h3{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.staff-content .post h4{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Styles for Teampage */
+
+/* Styles for Gallerypage */
+.big-container{
+    margin: 30px 0px;
+    padding: 0px 10px;
+}
+
+.big-container h1{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-right: 10px solid #eea622;
+    width: 50%;
+    font-size: 24px;
+}
+
+.gallery-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-shrink: 0;
+
+}
+
+.gallery-container .picture{
+    width: 400px;
+    height: 300px;
+}
+
+.gallery-container .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styles for Gallerypage */
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    border-top: solid #10326d 2px;
+    border-bottom: solid #10326d 10px;
+    color: #10326d;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    background-color: white;
+}
+
+footer .navbar-footer{
+    list-style-type: none;
+}
+
+footer .navbar-footer li{
+    list-style-type: none;
+}
+
+footer .navbar-footer a:hover{
+    color: #e4a633;
+}
+
+footer h2{
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+footer .social_networks{
+    width: 15%;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .social_networks .icons:hover{
+    color: #e4a633;
+}
+
+footer .social_networks .icons{
+    font-size: 25px;
+}
+/* footer */
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    section.gallery-container{
+        height: auto;
+        padding: 0px 10px;
+    }
+    .gallery-container .picture{
+        width: 500px;
+    }
+}
+@media  screen and (max-width: 1200px) {
+    .topbar{
+        height: 100px;
+        background-color: white;
+        margin-top: 0px;
+        padding: 0px 10px;
+        position: relative;
+    }
+    .topbar .social_networks{
+       display: none;
+    }
+    
+    /* Navigation Bar */
+    .navbar{
+       position: absolute;
+       width: 100vw;
+       height: 100vh;
+       top: 100px;
+       left: 0;
+       display: flex;
+       flex-direction: column;
+       background-color: #10326d;
+       justify-content: flex-start;
+       align-items: flex-start;
+       line-height: 50px;
+       padding-left: 50px;
+       padding-top: 20px;
+       margin-left: -100%;
+       transition: all 0.5s ease;
+       z-index: 10;
+    }
+
+    .navbar li a{
+        color: white;
+    }
+
+    .navbar.mobile-menu{
+        margin-left: 0;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .navbar li a::before{
+        display: none;
+    }
+    .navbar li a:hover{
+        color: #e4a633;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    /* Poster */
+    .poster{
+        height: 200px;
+    }
+
+    .poster .slogan{
+        display: none;
+    }
+
+    /* Articles */
+    .articles{
+        height: auto;
+        flex-direction: column;
+        padding: 0px 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+
+    .creation .picture, .goal .picture{
+        width: 80%;
+        height: auto;
+    }
+
+    .creation .picture{
+        order: 2;
+    }
+
+    .creation .content{
+        order: 1;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+    .content h1{
+        font-size: 17px;
+    }
+    .content h2{
+        font-size: 15px;
+    }
+    .content p, .content ul li{
+        font-size: 15px;
+    }
+    .contact .small-size{
+        font-size: 14px;
+
+    }
+
+    .contact p, .contact a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* staff - teampage */
+    .admin-staff h1, .technical-staff h1{
+        width: 100%;
+    }
+
+    .admin-staff .gallery, .technical-staff .gallery{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: auto;
+    }
+    /* staff - teampage */
+
+    /* footer */
+    footer{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+    .cab-contact{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .cab-contact h2{
+        font-size: 16px;
+    }
+    .navbar-footer{
+        display: none;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    footer .social_networks{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        align-items: center;
+    }
+}
